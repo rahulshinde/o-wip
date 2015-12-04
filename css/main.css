@@ -100,7 +100,79 @@ p {
 .text {
 	float: left;
 	margin-top: 60px;
-	width: 80%;
+	margin-bottom: 60px;
+	width: 90%;
+}
+
+.text p {
+	width: 55%;
+}
+
+.text a:link,
+.text a:visited {
+	color: black;
+}
+
+.collab {
+	width: 3
+}
+
+/* 	===========================
+		IMG STYLING
+	=========================== */
+
+.full {
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 150px;
+}
+
+.half {
+	float: left;
+	width: 35%;
+	margin-left: 10%;
+	margin-bottom: 150px;
+}
+
+/* 	===========================
+		INSTALLATION STYLING
+	=========================== */
+
+.installation {
+	width: 100%;
+}
+
+.installation img {
+	width: 30%;
+	margin-left: 15%;
+	margin-bottom: 150px
+}
+
+.installation h1 {
+	margin-left: 0;
+	margin-top: 170px;
+	width: 55%;
+	float: right;
+	text-align: center;
+	
+	line-height: 35px;
+	font-family: 'Halant';
+}
+
+.installation a:link,
+.installation a:visited,
+.sub {
+	color: black;
+	font-size: 24px;
+} 
+
+#reverse {
+	margin-left: -12px;
+}
+
+.subtitle {
+	font-family: 'Halant';
+	font-size: 18px;
 }
 
 /* 	===========================
@@ -125,4 +197,97 @@ p {
 	text-decoration: none;
 		color: black;
 
+}
+
+/*  =======================
+    MEDIA QUERIES
+    ======================= */
+
+@media screen and (max-width: 1000px) { 
+	
+	h1 {
+		font-size: 36px;
+	
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	.installation h1 {
+		margin-top: 150px;
+	}
+
+
+}
+
+@media screen and (max-width: 900px) { 
+	
+	.installation h1 {
+		margin-top: 110px;
+	}
+
+}
+
+@media screen and (max-width: 695px) {
+
+	h1 {
+		font-size: 50px;
+		width: 80%;
+		margin-left:10%;
+		/*color: blue;*/
+	}
+
+	p {
+		font-size: 16px;
+		margin-left: 10%;
+	} 
+
+	.text {
+		float: left;
+		width: 90%;
+		margin-top: 10px;
+		margin-left: 0;
+		margin-bottom: 50px;
+	}
+
+	.text p {
+		width: 90%;
+	}
+
+	.collab {
+		display: none;
+	}
+
+	.back a:link,
+	.back a:visited {
+		padding: 5px;
+	
+		text-decoration: none;
+		color: black;
+		background-color: white;
+	
+	}
+
+	.half,
+	.full,
+	.installation img {
+		float: none;
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 50px;
+	}
+
+	.installation img {
+		margin-bottom: 30px;
+	}
+
+	.installation h1 {
+		float: none;
+		width: 98%;
+		margin-left: 1%;
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
+	
 }
